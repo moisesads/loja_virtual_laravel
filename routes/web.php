@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/versao', function () {
-    return 'informação';
-});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
