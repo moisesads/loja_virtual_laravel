@@ -1,7 +1,7 @@
 #aqui direciona para https
 RewriteEngine On
 RewriteCond %{HTTPS} off
-RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [R,L] 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L] 
 #aqui é do laravel
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
