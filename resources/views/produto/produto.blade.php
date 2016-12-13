@@ -41,33 +41,45 @@
                             <h3>Composição</h3>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                         </div>
-                    </div>
-                    
-                </div>
-                 
+                    </div>  
+                    <br><br><br>
+                <a href="produtos">Ver outros produtos</a>
+                </div>   
+                
             </div>
             <h3>Produtos Relacionados</h3>
                 <div class="col-sm-9 col-md-6 col-lg-8">
-                   
-                    <div class="col-sm-4">
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                        <p>Current Project</p>
+                    <a href="produto">
+                        <div class="col-sm-4">
+                        <img src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                        <p>R$ 90,00</p>
+                        <p>Produto nome completo </p> 
+                        <hr>
                     </div>
-                    <div class="col-sm-4"> 
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                        <p>Project 2</p>    
+                    </a>
+                    <a href="produto">
+                        <div class="col-sm-4">
+                        <img src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                        <p>R$ 90,00</p>
+                        <p>Produto nome completo </p> 
+                        <hr>
                     </div>
-                    <div class="col-sm-4"> 
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                        <p>Project 2</p>    
+                    </a>
+                    <a href="produto">
+                        <div class="col-sm-4">
+                        <img src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                        <p>R$ 90,00</p>
+                        <p>Produto nome completo </p> 
+                        <hr>
                     </div>
+                    </a>
                 </div>
             
         </div>
     </div>
 </div>
-<br><br><br>
-
+<br><br>
+ @include('layouts.rodape')
 @endsection
 
 

@@ -20,6 +20,21 @@ Route::get('/produto', function (){
     return view('produto.produto');
 });
 
+Route::get('/produtos', function (){
+
+    return view('produto.todos');
+});
+
+Route::get('/resultados', function (){
+
+    return view('pagina.resultados');
+});
+
+Route::get('/contato', function (){
+
+    return view('pagina.contato');
+});
+
 
 Auth::routes();
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <title>@yield('title')</title>
         <meta charset="utf-8">
@@ -13,35 +13,39 @@
         <nav class="navbar navbar-inverse navbar-fixed-top" id="menu-superior">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <button  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="#"><b id="txt-branco">Loja Miss Daisy</b></a>
+                    <a class="navbar-brand"  href="{{ url('/') }}"><b id="txt-branco">Loja Miss Daisy</b></a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="{{ url('/') }}" id="txt-branco">Home</a></li>
-                        <li><a href="{{ url('/produto') }}" id="txt-branco">Produtos</a></li>
-                        <li><a href="#" id="txt-branco">Resultados</a></li>
-                        <li><a href="#" id="txt-branco">Contato</a></li>
+                        <li><a href="{{ url('/produtos') }}" id="txt-branco">Produtos</a></li>
+                        <li><a href="/resultados" id="txt-branco">Resultados</a></li>
+                        <li><a href="/contato" id="txt-branco">Contato</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
+                        <li><a  id="txt-branco" href="/carrinho">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                Meu Carrinho</a>
+                        </li>
                         @if (Auth::guest())
                         <li><a href="{{ url('/login') }}" id="txt-branco">Login</a></li>
                         <li><a href="{{ url('/register') }}" id="txt-branco">Cadastro</a></li>
-                        @else
-                        <li><a>Carrinho</a></li>
+                        @else                        
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"  id="txt-branco" role="button" aria-expanded="false">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>
                                     <a href="{{ url('/logout') }}"
                                        onclick="event.preventDefault();
-    document.getElementById('logout-form').submit();" id="txt-branco">
+    document.getElementById('logout-form').submit();">
                                         Sair
                                     </a>
 
@@ -58,9 +62,6 @@
         </nav>
         <br><br>
         @yield('content')
-        <footer class="container-fluid text-center" id="menu-superior">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            
-        </footer>  
+        
     </body>
 </html>

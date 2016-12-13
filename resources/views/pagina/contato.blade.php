@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'Minha Conta Miss Daisy')
+@section('title', 'Entre em contato com a equipe Miss Daisy')
 
 @section('content')
-<br><br>
+
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-9 col-md-offset-2">
             <br><br>
             <div class="panel panel-default">
-                <div class="panel-heading" id="texto-titulo">Login Minha Miss Daisy
+                <div class="panel-heading" id="texto-titulo">Seu contato é muito importante
                 </div>
                 <div class="panel-body">
                     @include('errors.erros-msg')
@@ -23,49 +23,39 @@
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
                             </div>
                         </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label id="texto-titulo" for="password" class="col-md-4 control-label">Senha</label>
+                        <div class="form-group{{ $errors->has('assunto') ? ' has-error' : '' }}">
+                            <label id="texto-titulo" for="assunto" class="col-md-4 control-label">Assunto</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
+                                
+                                <input id="email" class="form-control" name="assunto" value="{{ old('assunto') }}" required autofocus>
                             </div>
                         </div>
+                        <div class="form-group{{ $errors->has('mensagem') ? ' has-error' : '' }}">
+                            <label id="texto-titulo" for="mensagem" class="col-md-4 control-label">Mensagem</label>
 
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember"> Lembrar
-                                    </label>
-                                </div>
+                            <div class="col-md-6">
+                                <textarea name="mensagem"  class="form-control" name="mensagem"  value="{{ old('mensagem') }}" required autofocus></textarea>
                             </div>
                         </div>
-
+                        
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary" id="botao">
-                                    Entrar
+                                    Enviar Mensagem
                                 </button>
-
-                                <a class="btn btn-link" href="{{ url('/password/reset') }}">
-                                    Esqueceu sua senha?
-                                </a>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <br>
-            <center>
-               <a class="btn btn-success" href="{{ url('/register') }}">
-                        Criar Uma Nova Conta
-                    </a> 
-            </center>            
-                    
         </div>
     </div>
 </div>
 <br><br><br><br>
+
+
 @include('layouts.rodape')
 @endsection
+
+

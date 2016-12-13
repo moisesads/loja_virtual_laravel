@@ -2,6 +2,20 @@
     background: #712095;
 }
 
+#texto-titulo{
+    color: #712095;
+}
+
+#rodape{
+    background: #6d6d6d;
+    box-shadow: 0px 15px 50px inset;
+}
+
+#produto-foto{
+    max-height: 200px;
+    max-width: 200px;
+}
+
 #botao{
     background: #712095;
     color: #ffffff;

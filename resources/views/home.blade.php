@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Bem Vindo Cliente')
+
 @section('content')
 <br><br>
 <div class="container">
@@ -16,4 +18,5 @@
         </div>
     </div>
 </div>
+ @include('layouts.rodape')
 @endsection
