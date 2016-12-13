@@ -35,6 +35,12 @@ Route::get('/contato', function (){
     return view('pagina.contato');
 });
 
+Route::get('/contato', function (){
+
+    return view('pagina.contato');
+});
+
+Route::resource('/mensagem_contato', 'ContatoController@mensagem');
 
 Auth::routes();
 

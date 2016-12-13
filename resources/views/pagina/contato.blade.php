@@ -13,7 +13,20 @@
                 </div>
                 <div class="panel-body">
                     @include('errors.erros-msg')
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
+
+                    @if ($message = Session::get('success'))
+                    <div class="col-md-12">
+                        <div class="alert alert-success" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span></button>
+                            <strong>Mensagem enviada!</strong> {{ $message }}
+                        </div>
+                    </div>
+                    <center>
+                        <img src="/img/contato-sucesso.png"/><br><br><br><br>
+                    </center>                    
+                    @else
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/mensagem_contato') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -27,7 +40,7 @@
                             <label id="texto-titulo" for="assunto" class="col-md-4 control-label">Assunto</label>
 
                             <div class="col-md-6">
-                                
+
                                 <input id="email" class="form-control" name="assunto" value="{{ old('assunto') }}" required autofocus>
                             </div>
                         </div>
@@ -38,7 +51,7 @@
                                 <textarea name="mensagem"  class="form-control" name="mensagem"  value="{{ old('mensagem') }}" required autofocus></textarea>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary" id="botao">
@@ -47,6 +60,7 @@
                             </div>
                         </div>
                     </form>
+                    @endif
                 </div>
             </div>
         </div>
