@@ -13,12 +13,142 @@
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Entre com o nome do produto...">
                 <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Buscar</button>
+                    <button id="texto-titulo" class="btn btn-default" type="button">Buscar</button>
                 </span>
             </div>
         </div>
     </div><hr>
     <div class="row">
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
+        <a href="produto">
+            <div class="col-sm-2">
+                <center>
+                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                </center>
+                <h3>R$ 90,90</h3>
+                <h4>Nome do produto</h4>
+                <hr>
+            </div>
+        </a>
         <a href="produto">
             <div class="col-sm-2">
                 <center>

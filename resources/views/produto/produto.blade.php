@@ -11,16 +11,17 @@
             <div class="row">
                 <div class="col-sm-3 col-md-6 col-lg-4" >
                     <br>
-                    <img src="/img/produto.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-                    <h1><b>R$ 90,00</b></h1>
-                    <p>3 X R$ 30,00</p>
-                    <button type="button" class="btn btn-default btn-lg btn-block" id="botao">Comprar</button>
-                   
+                    <center>
+                        <img id="produto-foto" src="/img/produto.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                        <h1><b>R$ 90,00</b></h1>
+                        <p>3 X R$ 30,00</p>
+                        <button type="button" class="btn btn-default btn-lg btn-block" id="botao">Comprar</button>
+                    </center>
                 </div>
                 <div class="col-sm-9 col-md-6 col-lg-8">
                     <h2><span class="label label-success">Frete Grátis</span></h2>
                     <h3>Para todo Brasil<br>Só aqui pelo site oficial de fábrica.</h3> 
-                    
+
                     <br>
                     <ul class="nav nav-tabs">
                         <li class="active"><a data-toggle="tab" href="#home">Descrição</a></li>
@@ -42,44 +43,50 @@
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                         </div>
                     </div>  
-                    <br><br><br>
-                <a href="produtos">Ver outros produtos</a>
+                    <br><br>
+                    <a href="produtos">Ver outros produtos</a>
                 </div>   
-                
+
+            </div><hr>
+            <h4 id="texto-titulo">Produtos Relacionados</h4>
+            <div class="col-sm-9 col-md-6 col-lg-8">
+                <center>
+                    <a href="produto">
+                        <div class="col-sm-4">
+                            <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                            <p>R$ 90,00</p>
+                            <p>Produto nome completo </p> 
+                            <hr>
+                        </div>
+                    </a>
+                </center>
+                <center>
+                    <a href="produto">
+                        <div class="col-sm-4">
+                            <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                            <p>R$ 90,00</p>
+                            <p>Produto nome completo </p> 
+                            <hr>
+                        </div>
+                    </a>
+                </center>
+                <center>
+                    <a href="produto">
+                        <div class="col-sm-4">
+                            <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                            <p>R$ 90,00</p>
+                            <p>Produto nome completo </p> 
+                            <hr>
+                        </div>
+                    </a>
+                </center>
             </div>
-            <h3>Produtos Relacionados</h3>
-                <div class="col-sm-9 col-md-6 col-lg-8">
-                    <a href="produto">
-                        <div class="col-sm-4">
-                        <img src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
-                        <p>R$ 90,00</p>
-                        <p>Produto nome completo </p> 
-                        <hr>
-                    </div>
-                    </a>
-                    <a href="produto">
-                        <div class="col-sm-4">
-                        <img src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
-                        <p>R$ 90,00</p>
-                        <p>Produto nome completo </p> 
-                        <hr>
-                    </div>
-                    </a>
-                    <a href="produto">
-                        <div class="col-sm-4">
-                        <img src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
-                        <p>R$ 90,00</p>
-                        <p>Produto nome completo </p> 
-                        <hr>
-                    </div>
-                    </a>
-                </div>
-            
+
         </div>
     </div>
 </div>
 <br><br>
- @include('layouts.rodape')
+@include('layouts.rodape')
 @endsection
 
 

@@ -19,6 +19,7 @@
 #botao{
     background: #712095;
     color: #ffffff;
+    max-width: 400px;
 }
 #txt-branco{
     color: #ffffff;
