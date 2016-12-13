@@ -1,46 +1,58 @@
 <?php
 
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| This file is where you may define all of the routes that are handled
-| by your application. Just tell Laravel the URIs it should respond
-| to using a Closure or controller method. Build something great!
-|
-*/
+  |--------------------------------------------------------------------------
+  | Web Routes
+  |--------------------------------------------------------------------------
+  |
+  | This file is where you may define all of the routes that are handled
+  | by your application. Just tell Laravel the URIs it should respond
+  | to using a Closure or controller method. Build something great!
+  |
+ */
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/produto', function (){
+Route::get('/produto', function () {
 
     return view('produto.produto');
 });
 
-Route::get('/produtos', function (){
+Route::get('/produtos', function () {
 
     return view('produto.todos');
 });
 
-Route::get('/resultados', function (){
+Route::get('/resultados', function () {
 
     return view('pagina.resultados');
 });
 
-Route::get('/contato', function (){
+Route::get('/contato', function () {
 
     return view('pagina.contato');
 });
 
-Route::get('/contato', function (){
+Route::get('/contato', function () {
 
     return view('pagina.contato');
 });
 
 Route::resource('/mensagem_contato', 'ContatoController@mensagem');
+
+//acesso restrito admin
+
+Route::group(['prefix' => 'admin'], function () {
+    
+    Route::get('/', function () {
+
+        return view('admin.home');
+    });
+
+    Route::resource('produtos', 'ProdutoController');
+});
 
 Auth::routes();
 

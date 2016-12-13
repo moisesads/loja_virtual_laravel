@@ -8,6 +8,7 @@ use App\Models\Contato;
 class ContatoController extends Controller
 {
     //
+    
     public function mensagem(Request $request){
         
         $this->validate($request,[
