@@ -28,14 +28,10 @@
                         <li><a href="/contato" id="txt-branco">Contato</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a  id="txt-branco" href="/admin">
-                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                                Admin</a>
-                        </li>
-                        <li><a  id="txt-branco" href="/carrinho">
+                        <li><a  id="txt-branco" href="/home">
                                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                                 Meu Carrinho</a>
-                        </li>
+                        </li>   
                         @if (Auth::guest())
                         <li><a href="{{ url('/login') }}" id="txt-branco">Login</a></li>
                         <li><a href="{{ url('/register') }}" id="txt-branco">Cadastro</a></li>
@@ -65,7 +61,7 @@
             </div>
         </nav>
         <br><br>
-        
+
         @yield('content')
 
     </body>

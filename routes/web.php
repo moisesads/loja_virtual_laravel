@@ -12,7 +12,7 @@
  */
 
 //entrada do site
-Route::resource('/', 'ProdutoController@welcome');
+Route::resource('/', 'IndexController');
 
 Route::resource('/produto', 'ProdutoController@show');
 
@@ -38,10 +38,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth.tipo:Admin'], function () {
     
-    Route::get('/', function () {
-
-        return view('admin.home');
-    });
+    Route::resource('/', 'AdminController');
 
     Route::resource('/produtos', 'ProdutoController');
     

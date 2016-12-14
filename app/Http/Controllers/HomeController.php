@@ -23,6 +23,14 @@ class HomeController extends Controller
      */
     public function index()
     {
+        //
+        //REDIRECIONAMENTO DE USUÁRIOS PARA ROTAS POR NÍVEL DE ACESSO
+        $tipo = auth()->user()->tipo;
+        
+        if ($tipo == 'Admin') {
+            return redirect('admin');
+        } 
+        
         return view('home');
     }
     

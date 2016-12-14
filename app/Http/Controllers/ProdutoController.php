@@ -13,12 +13,6 @@ class ProdutoController extends Controller {
         //acesso admin
         return view('produto.admin.todos', compact('produtos'));
     }
-    
-    public function welcome(){
-        //entrada do site
-        $produtos = Produto::get();
-        return view('welcome', compact('produtos'));
-    }
 
     public function todos() {        
         $produtos = Produto::get();        
