@@ -14,13 +14,22 @@
         <div class="col-lg-6">
             <h3 id="texto-titulo">Resultados</h3>            
         </div>
+        <hr>
     </div>
-    <hr>
-    <div class="row">
-        Página em construção<br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br>
-        <br><br>
-        <br><br>
+    <div class="row"><br><br>
+       <div class="container">
+            <div class="alert alert-info" role="alert">
+                <h4><strong>Página em construção.</strong><br>
+                Aproveite e <a id="texto-titulo" href="/register">cadastre-se</a>, é rapidinho!
+                </h4>
+            </div>
+            <center>
+                <a href="{{ url('/produtos') }}">Voltar para Produtos</a><br><br>
+                <a class="btn btn-success" href="{{ url('/register') }}">
+                    Criar Uma Nova Conta
+                </a> 
+            </center>   <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div> 
     </div>
 </div>
 

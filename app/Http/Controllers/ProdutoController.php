@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Produto;
+use Illuminate\Support\Facades\DB;
 
 class ProdutoController extends Controller {
 
@@ -52,10 +53,15 @@ class ProdutoController extends Controller {
     }
 
     public function show($id) {
+        //busca produto pelo id
         $produto = Produto::findOrFail($id);
+        //valor das parcelas 
         $parcela = $produto->preco / 6;
         $parcela = number_format($parcela, 2);
-        return view('produto.produto', compact('produto', 'parcela'));
+        //busca produtos relacionados
+        $produtos_rl = DB::table('produtos')->paginate(3);
+               
+        return view('produto.produto', compact('produto', 'parcela', 'produtos_rl'));
     }
 
     public function edit($id) {

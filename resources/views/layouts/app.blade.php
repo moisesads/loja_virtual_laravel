@@ -28,7 +28,7 @@
                         <li><a href="/contato" id="txt-branco">Contato</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a  id="txt-branco" href="/home">
+                        <li><a  id="txt-branco" href="/carrinho">
                                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                                 Meu Carrinho</a>
                         </li>   
@@ -42,6 +42,11 @@
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="/home">
+                                        Minha Conta
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="{{ url('/logout') }}"
                                        onclick="event.preventDefault();

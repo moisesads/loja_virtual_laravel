@@ -17,7 +17,7 @@
                         <h2><b>R$ {{ $produto->preco }}</b></h2>
                         <p><b>6x de {{ $parcela }} sem juros</b></p>
 
-                        <button type="button" class="btn btn-default btn-lg btn-block" id="botao">Comprar</button>
+                        <a href="/carrinho" class="btn btn-default btn-lg btn-block" id="botao">Comprar</a>
                     </center>
                 </div>
                 <div class="col-sm-9 col-md-6 col-lg-8">
@@ -50,36 +50,18 @@
             </div><hr>
             <h4 id="texto-titulo">quem viu este produto, viu também</h4>
             <div class="col-sm-9 col-md-6 col-lg-8">
+                @foreach ( $produtos_rl as $produto_rl )
                 <center>
                     <a href="produto">
                         <div class="col-sm-4">
-                            <img id="produto-foto" src="{{ $produto->foto }}" class="img-rounded" style="width:100%" alt="Image">
-                            <p>R$ 90,00</p>
-                            <p>Produto nome completo </p> 
+                            <img id="produto-foto" src="{{ $produto_rl->foto }}" class="img-rounded" style="width:100%" alt="Image">
+                            <p>R$ {{ $produto_rl->preco }}</p>
+                            <p>{{ $produto_rl->nome }} </p> 
                             <hr>
                         </div>
                     </a>
                 </center>
-                <center>
-                    <a href="produto">
-                        <div class="col-sm-4">
-                            <img id="produto-foto" src="/img/produto.jpg" class="img-rounded" style="width:100%" alt="Image">
-                            <p>R$ 90,00</p>
-                            <p>Produto nome completo </p> 
-                            <hr>
-                        </div>
-                    </a>
-                </center>
-                <center>
-                    <a href="produto">
-                        <div class="col-sm-4">
-                            <img id="produto-foto" src="/img/produto.jpg" class="img-rounded" style="width:100%" alt="Image">
-                            <p>R$ 90,00</p>
-                            <p>Produto nome completo </p> 
-                            <hr>
-                        </div>
-                    </a>
-                </center>
+                @endforeach
             </div>
 
         </div>

@@ -23,6 +23,11 @@ Route::get('/resultados', function () {
     return view('pagina.resultados');
 });
 
+Route::get('/carrinho', function () {
+
+    return view('carrinho.carrinho');
+});
+
 //contato
 Route::get('/contato', function () {
     return view('pagina.contato');
