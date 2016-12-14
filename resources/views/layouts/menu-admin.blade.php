@@ -1,12 +1,12 @@
 <br>
     <div class="row">
         <div class="col-sm-3">
-            <center>
-                <h3 id="texto-titulo">Admin Miss Daisy</h3>
+            <center><br>
+                <img src="/img/logoM.png"/>
             </center>
         </div>
         <div class="col-sm-9">
-            <a href="/produtos">
+            <a href="/admin/produtos">
                 <div class="menu-admin"><br>
                     <center>
                         <span class="glyphicon glyphicon-barcode" aria-hidden="true"></span><br>
@@ -14,7 +14,7 @@
                     </center>
                 </div>
             </a>
-            <a href="clientes">  
+            <a href="/admin/clientes">  
                 <div class="menu-admin"><br>
                     <center>
                         <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
@@ -22,7 +22,7 @@
                     </center>
                 </div>
             </a>
-            <a href="vendas">
+            <a href="/admin/vendas">
                 <div class="menu-admin"><br>
                     <center>
                         <span class="glyphicon glyphicon-usd" aria-hidden="true"></span><br>
@@ -30,7 +30,7 @@
                     </center>
                 </div>
             </a>
-            <a href="pedidos">
+            <a href="/admin/pedidos">
                 <div class="menu-admin"><br>
                     <center>
                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><br>
@@ -38,7 +38,7 @@
                     </center>
                 </div>
             </a>
-            <a href="mensagens">
+            <a href="/admin/mensagens">
                 <div class="menu-admin"><br>
                     <center>
                         <span class="glyphicon glyphicon-comment" aria-hidden="true"></span><br>
@@ -46,7 +46,7 @@
                     </center>
                 </div>
             </a>
-            <a href="relatorios">
+            <a href="/admin/relatorios">
                 <div class="menu-admin"><br>
                     <center>
                         <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span><br>

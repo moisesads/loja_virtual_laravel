@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Loja Miss Daisy Professional')
+@section('title', 'Miss Daisy|Linha completa para salões de beleza.')
 
 @section('content')
 
@@ -14,13 +14,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="/img/banner1.jpg" alt="Image">
+            <img src="/img/banner/banner1.jpg" alt="Image">
             <div class="carousel-caption">
             </div>      
         </div>
 
         <div class="item">
-            <img src="/img/banner2.jpg" alt="Image">
+            <img src="/img/banner/banner2.jpg" alt="Image">
             <div class="carousel-caption">
                 <h2>Sua loja de fábrica.</h2>
             </div>      
@@ -41,7 +41,7 @@
 <div class="container text-center">  
     <div class="row">
         <div class="col-lg-6">
-            <h3 id="texto-titulo">Preços de fábrica, só aqui no site oficial!</h3>
+            <img id="logoM" src="/img/logoM.png"/>
         </div>
         <br>
         <div class="col-lg-6">
@@ -56,78 +56,24 @@
     </div>
     <hr>
     <div class="row">
-        <a href="produto">
+      @if (count($produtos) > 0)
+        @foreach ($produtos as $produto)
+        <a href="produto/{{ $produto->id }}">
             <div class="col-sm-6 col-md-3">
                 <center>
-                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
+                   <img id="produto-foto" src="{{ $produto->foto }}" class="img-rounded" style="width:100%" alt="Image">
                 </center>
-                <h3>R$ 90,90</h3>
-                <h4>Nome do produto</h4>
+                <h4>{{ $produto->nome }}</h4>
+                <h3>R$ {{ $produto->preco }}</h3>
+                <h5>6x de sem juros</h5>
                 <hr>
             </div>
         </a>
-
-        <a href="produto">
-            <div class="col-sm-6 col-md-3">
-                <center>
-                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
-                </center>
-                <h3>R$ 90,90</h3>
-                <h4>Nome do produto</h4>
-                <hr>
-            </div>
-        </a>
-        <a href="produto">
-            <div class="col-sm-6 col-md-3">
-                <center>
-                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
-                </center>
-                <h3>R$ 90,90</h3>
-                <h4>Nome do produto</h4>
-
-                <hr>
-            </div>
-        </a>
-        <a href="produto">
-            <div class="col-sm-6 col-md-3">
-                <center>
-                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
-                </center>
-                <h3>R$ 90,90</h3>
-                <h4>Nome do produto</h4>
-                <hr>
-            </div>
-        </a>
-        <a href="produto">
-            <div class="col-sm-6 col-md-3">
-                <center>
-                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
-                </center>
-                <h3>R$ 90,90</h3>
-                <h4>Nome do produto</h4>
-                <hr>
-            </div>
-        </a>
-        <a href="produto">
-            <div class="col-sm-6 col-md-3">
-                <center>
-                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
-                </center>
-                <h3>R$ 90,90</h3>
-                <h4>Nome do produto</h4>
-                <hr>
-            </div>
-        </a>
-        <a href="produto">
-            <div class="col-sm-6 col-md-3">
-                <center>
-                   <img id="produto-foto" src="/img/produto.jpg" class="img-responsive" style="width:100%" alt="Image">
-                </center>
-                <h3>R$ 90,90</h3>
-                <h4>Nome do produto</h4>
-                <hr>
-            </div>
-        </a>
+        @endforeach   
+        @else
+        <br><br><br><br><center>Não extistem produtos cadastrados.</center><br><br><br><br>
+        @endif
+        
         <div class="col-sm-6 col-md-3">
             <a  href="{{ url('/produtos') }}">
                 Ver todos os produtos

@@ -11,49 +11,41 @@
   |
  */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//entrada do site
+Route::resource('/', 'ProdutoController@welcome');
 
-Route::get('/produto', function () {
+Route::resource('/produto', 'ProdutoController@show');
 
-    return view('produto.produto');
-});
-
-Route::get('/produtos', function () {
-
-    return view('produto.todos');
-});
+Route::resource('/produtos', 'ProdutoController@todos');
 
 Route::get('/resultados', function () {
 
     return view('pagina.resultados');
 });
 
+//contato
 Route::get('/contato', function () {
-
     return view('pagina.contato');
 });
+Route::resource('/mensagem_contato', 'ContatoController@mensagem');//grava mensagem
 
-Route::get('/contato', function () {
+//autenticação de usuário
+Auth::routes();
 
-    return view('pagina.contato');
-});
-
-Route::resource('/mensagem_contato', 'ContatoController@mensagem');
+Route::get('/home', 'HomeController@index');
 
 //acesso restrito admin
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware' => 'auth.tipo:Admin'], function () {
     
     Route::get('/', function () {
 
         return view('admin.home');
     });
 
-    Route::resource('produtos', 'ProdutoController');
+    Route::resource('/produtos', 'ProdutoController');
+    
+    Route::resource('/cadastrar_produto', 'ProdutoController@store');
 });
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index');

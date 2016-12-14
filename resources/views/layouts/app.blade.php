@@ -28,6 +28,10 @@
                         <li><a href="/contato" id="txt-branco">Contato</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
+                        <li><a  id="txt-branco" href="/admin">
+                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                                Admin</a>
+                        </li>
                         <li><a  id="txt-branco" href="/carrinho">
                                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                                 Meu Carrinho</a>

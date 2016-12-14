@@ -5,15 +5,14 @@
 @section('content')
 <br>
 <div class="container text-center">
-    
     <div class="row">
         <div class="col-lg-6">
-            <h3 id="texto-titulo">Resultados</h3>
+            <center>
+                <img src="/img/logoM.png"/>
+            </center> 
         </div>
         <div class="col-lg-6">
-            <br>
-            <div class="input-group">
-            </div>
+            <h3 id="texto-titulo">Resultados</h3>            
         </div>
     </div>
     <hr>
@@ -23,7 +22,7 @@
         <br><br>
         <br><br>
     </div>
-  </div>
+</div>
 
 
 @include('layouts.rodape')

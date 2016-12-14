@@ -8,7 +8,7 @@
     @include('layouts.menu-admin')
     <ol class="breadcrumb">
         <li><a href="/admin">Home</a></li>
-        <li><a href="/produtos">Produtos</a></li>
+        <li><a href="/admin/produtos">Produtos</a></li>
         <li class="active">Editar</li>
     </ol>
     <div class="row">

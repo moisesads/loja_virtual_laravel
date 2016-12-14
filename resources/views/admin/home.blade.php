@@ -7,12 +7,13 @@
 <div class="container">
     @include('layouts.menu-admin')
     <ol class="breadcrumb">
+        
         <li class="active">Home</li>
     </ol>
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            Bem vindo à adiministração da Loja Miss Daisy
-        </div>
+        <center >
+            <h3 id="texto-titulo"> Bem vindo à administração da Loja Miss Daisy</h3>
+        </center>
     </div>
 </div>
 @endsection

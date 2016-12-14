@@ -5,9 +5,15 @@
 @section('content')
 
 <div class="container">
+
+    <div class="row"><br><br>
+        <div class="col-md-9 col-md-offset-2">
+            <img src="/img/logoM.png"/>
+        </div>            
+    </div>  
     <div class="row">
         <div class="col-md-9 col-md-offset-2">
-            <br><br>
+
             <div class="panel panel-default">
                 <div class="panel-heading" id="texto-titulo">Seu contato é muito importante
                 </div>
@@ -33,7 +39,7 @@
                             <label id="texto-titulo" for="email" class="col-md-4 control-label">Email</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" autofocus>
                             </div>
                         </div>
                         <div class="form-group{{ $errors->has('assunto') ? ' has-error' : '' }}">
@@ -41,14 +47,14 @@
 
                             <div class="col-md-6">
 
-                                <input id="email" class="form-control" name="assunto" value="{{ old('assunto') }}" required autofocus>
+                                <input id="email" class="form-control" name="assunto" value="{{ old('assunto') }}" autofocus>
                             </div>
                         </div>
                         <div class="form-group{{ $errors->has('mensagem') ? ' has-error' : '' }}">
                             <label id="texto-titulo" for="mensagem" class="col-md-4 control-label">Mensagem</label>
 
                             <div class="col-md-6">
-                                <textarea name="mensagem"  class="form-control" name="mensagem"  value="{{ old('mensagem') }}" required autofocus></textarea>
+                                <textarea name="mensagem"  class="form-control" name="mensagem"  value="{{ old('mensagem') }}" autofocus></textarea>
                             </div>
                         </div>
 

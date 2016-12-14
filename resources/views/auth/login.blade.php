@@ -6,8 +6,12 @@
 <br><br>
 <div class="container">
     <div class="row">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <img src="/img/logoM.png"/>
+            </div>            
+        </div>  
         <div class="col-md-8 col-md-offset-2">
-            <br><br>
             <div class="panel panel-default">
                 <div class="panel-heading" id="texto-titulo">Login Minha Miss Daisy
                 </div>
@@ -20,7 +24,7 @@
                             <label id="texto-titulo" for="email" class="col-md-4 control-label">Email</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" autofocus>
                             </div>
                         </div>
 
@@ -28,7 +32,7 @@
                             <label id="texto-titulo" for="password" class="col-md-4 control-label">Senha</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
+                                <input id="password" type="password" class="form-control" name="password">
                             </div>
                         </div>
 
@@ -58,11 +62,11 @@
             </div>
             <br>
             <center>
-               <a class="btn btn-success" href="{{ url('/register') }}">
-                        Criar Uma Nova Conta
-                    </a> 
+                <a class="btn btn-success" href="{{ url('/register') }}">
+                    Criar Uma Nova Conta
+                </a> 
             </center>            
-                    
+
         </div>
     </div>
 </div>
