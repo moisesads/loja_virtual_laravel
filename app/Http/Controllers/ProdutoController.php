@@ -10,13 +10,13 @@ class ProdutoController extends Controller {
 
     //
     public function index() {
-        $produtos = Produto::get();
+        $produtos = DB::table('produtos')->paginate(5);
         //acesso admin
         return view('produto.admin.todos', compact('produtos'));
     }
 
     public function todos() {        
-        $produtos = Produto::get();        
+        $produtos = DB::table('produtos')->paginate(8);       
         //acesso publico
         return view('produto.todos', compact('produtos'));
     }
@@ -28,7 +28,7 @@ class ProdutoController extends Controller {
     public function store(Request $request) {
 
         $this->validate($request, [
-            'nome' => 'required',
+            'nome' => 'required | max:30',
             'preco' => 'required | numeric ',
             'descricao' => 'required',
             'foto' => 'required',
@@ -59,7 +59,7 @@ class ProdutoController extends Controller {
         $parcela = $produto->preco / 6;
         $parcela = number_format($parcela, 2);
         //busca produtos relacionados
-        $produtos_rl = DB::table('produtos')->paginate(3);
+        $produtos_rl = DB::table('produtos')->paginate(4);
                
         return view('produto.produto', compact('produto', 'parcela', 'produtos_rl'));
     }

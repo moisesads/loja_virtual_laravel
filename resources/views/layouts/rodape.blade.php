@@ -24,11 +24,11 @@
                         <br>
                         <h5>
                         <a href="{{ url('/') }}" id="txt-branco">Home</a><br><br>
-                        <a href="{{ url('/produto') }}" id="txt-branco">Produtos</a><br><br>
-                        <a href="#" id="txt-branco">Resultados</a><br><br>
-                        <a href="#" id="txt-branco">Contato</a><br><br>
-                        <a href="#" id="txt-branco">Login</a><br><br>
-                        <a href="#" id="txt-branco">Cadastro</a><br><br>
+                        <a href="{{ url('/produtos') }}" id="txt-branco">Produtos</a><br><br>
+                        <a href="/resultados" id="txt-branco">Resultados</a><br><br>
+                        <a href="/contato" id="txt-branco">Contato</a><br><br>
+                        <a href="/login" id="txt-branco">Login</a><br><br>
+                        <a href="/register" id="txt-branco">Cadastro</a><br><br>
                         </h5>
                         <br><br><br><br>
                     </div>
@@ -38,6 +38,8 @@
             <hr>
             <br>
             <h5 id="txt-branco">© 2017 | Loja Miss Daisy</h5>
+            <h6>Verão BETA - Teste Inicial</h6>
+            <h6>Desenvolvida por Moisés Rocha de Oliveira</h6>
         </div>
     </div> 
 </footer>

@@ -13,8 +13,8 @@
                 <div class="col-sm-3 col-md-6 col-lg-4" >
                     <br> 
                     <center>  
-                        <img id="produto-foto" src="{{ $produto->foto }}" class="img-rounded" alt="Cinque Terre" width="300" height="200">
-                        <h2><b>R$ {{ $produto->preco }}</b></h2>
+                        <img id="produto-foto" src="{{ $produto->foto }}" class="img-rounded" alt="{{ $produto->nome }}" width="300" height="200">
+                        <h2><b id="preco">R$ {{ $produto->preco }}</b></h2>
                         <p><b>6x de {{ $parcela }} sem juros</b></p>
 
                         <a href="/carrinho" class="btn btn-default btn-lg btn-block" id="botao">Comprar</a>
@@ -48,22 +48,26 @@
                 </div>   
 
             </div><hr>
-            <h4 id="texto-titulo">quem viu este produto, viu também</h4>
-            <div class="col-sm-9 col-md-6 col-lg-8">
-                @foreach ( $produtos_rl as $produto_rl )
-                <center>
-                    <a href="produto">
-                        <div class="col-sm-4">
-                            <img id="produto-foto" src="{{ $produto_rl->foto }}" class="img-rounded" style="width:100%" alt="Image">
-                            <p>R$ {{ $produto_rl->preco }}</p>
-                            <p>{{ $produto_rl->nome }} </p> 
-                            <hr>
-                        </div>
-                    </a>
-                </center>
-                @endforeach
+            <h4 id="texto-titulo">quem viu este produto, viu também</h4><br>
+            <div class="row">
+               
+                    @foreach ( $produtos_rl as $produto_rl )
+                    <!-- verifica se é o produto citado acima-->
+                    @if ( $produto_rl->id != $produto->id ) 
+                    <center>
+                        <a href="/produto/{{$produto_rl->id }}?page=3">
+                            <div class="col-sm-6 col-md-3">
+                                <img id="produto-foto" src="{{ $produto_rl->foto }}" class="img-rounded" width="100" height="100" alt="{{ $produto_rl->nome }}">
+                                <p>R$ {{ $produto_rl->preco }}<br>
+                                    {{ $produto_rl->nome }}<br><br>
+                                </p>
+                            </div>
+                        </a>
+                    </center>
+                    @endif
+                    @endforeach
             </div>
-
+           
         </div>
     </div>
 </div>

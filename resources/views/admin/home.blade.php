@@ -13,6 +13,8 @@
     <div class="row">
         <center >
             <h3 id="texto-titulo"> Bem vindo à administração da Loja Miss Daisy</h3>
+             <h5>Versão Beta</h5>
+            <h5>Loja Desenvolvida por Moisés Rocha de Oliveira @2016/2017</h5>
         </center>
     </div>
 </div>

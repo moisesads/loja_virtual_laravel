@@ -15,7 +15,7 @@
     <div class="row">
         <form method="POST" action="{{ url('/admin/cadastrar_produto') }}">
             {{ csrf_field() }}
-            
+
             <div  class="col-sm-3" >
                 <div class="form-group{{ $errors->has('nome') ? ' has-error' : '' }}">
                     <label id="texto-titulo" for="nome">Nome</label>
@@ -45,8 +45,13 @@
             </div>
             <div  class="col-sm-3">
                 <div class="form-group{{ $errors->has('status') ? ' has-error' : '' }}">
-                    <label id="texto-titulo" for="status">Status</label>
-                    <input id="status" type="status" class="form-control" name="status" value="{{ old('status') }}" autofocus>
+                    <label id="texto-titulo" for="status" >Status</label>
+                    <select name="status" class="form-control" style="width:280px;">
+                        <option value="Disponível">Disponível</option>
+                        <option value="Indisponível">Indisponível</option>
+                        <option value="Invisivel">Invisivel</option>
+                        <option value="Últimas Unidades">Últimas Unidades</option>
+                    </select>
                 </div>
                 <div class="form-group{{ $errors->has('composicao') ? ' has-error' : '' }}">
                     <label id="texto-titulo" for="composicao" >Composição</label>
@@ -58,7 +63,7 @@
                 <div class="form-group{{ $errors->has('categoria') ? ' has-error' : '' }}">
                     <label id="texto-titulo" for="categoria">Categoria</label>
                     <input id="categoria" type="categoria" class="form-control"
-                           name="categoria" value="{{ old('categoria') }}" autofocus>
+                           name="categoria" value="{{ old('categoria') }}" disabled>
                 </div>
                 <div class="form-group{{ $errors->has('modo_usar') ? ' has-error' : '' }}">
                     <label id="texto-titulo" for="modo_usar">Modo de usar</label>

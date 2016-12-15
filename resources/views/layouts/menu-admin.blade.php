@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-sm-3">
             <center><br>
-                <img src="/img/logoM.png"/>
+                <img src="/img/logoM.png" alt="Logo Miss Daisy"/>
             </center>
         </div>
         <div class="col-sm-9">
@@ -14,7 +14,7 @@
                     </center>
                 </div>
             </a>
-            <a href="/admin/clientes">  
+            <a href="#">  
                 <div class="menu-admin"><br>
                     <center>
                         <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
@@ -22,7 +22,7 @@
                     </center>
                 </div>
             </a>
-            <a href="/admin/vendas">
+            <a href="#">
                 <div class="menu-admin"><br>
                     <center>
                         <span class="glyphicon glyphicon-usd" aria-hidden="true"></span><br>
@@ -30,7 +30,7 @@
                     </center>
                 </div>
             </a>
-            <a href="/admin/pedidos">
+            <a href="#">
                 <div class="menu-admin"><br>
                     <center>
                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><br>
@@ -38,7 +38,7 @@
                     </center>
                 </div>
             </a>
-            <a href="/admin/mensagens">
+            <a href="#">
                 <div class="menu-admin"><br>
                     <center>
                         <span class="glyphicon glyphicon-comment" aria-hidden="true"></span><br>
@@ -46,7 +46,7 @@
                     </center>
                 </div>
             </a>
-            <a href="/admin/relatorios">
+            <a href="#">
                 <div class="menu-admin"><br>
                     <center>
                         <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span><br>

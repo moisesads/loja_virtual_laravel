@@ -25,20 +25,30 @@
     <div class="row">
         @if (count($produtos) > 0)
         @foreach ($produtos as $produto)
-        <a href="produto/{{ $produto->id }}">
-            <div class="col-sm-2">
-                <center>
-                    <img id="produto-foto" src="{{ $produto->foto }}" class="img-rounded" style="width:100%" alt="Image">
-                </center>
-                <h4>R$ {{ $produto->nome }}</h4>
-                <h3>{{ $produto->preco }}</h3>
-                <hr>
+        <a href="produto/{{ $produto->id }}?page=2">
+            <div class="col-sm-6 col-md-3" >
+                <div class="thumbnail" id="produto">
+                    <center>
+                        <img id="produto-foto" src="{{ $produto->foto }}" class="img-rounded" width="100" height="100" alt="{{ $produto->nome }}">
+                        <p>{{ $produto->nome }}</p>
+                        <h4 id="preco">R$ {{ $produto->preco }}</h4>
+                    </center>
+                </div>
             </div>
         </a>
         @endforeach   
+
         @else
         <br><br><br><br><center>Não extistem produtos cadastrados.</center><br><br><br><br>
         @endif
+
+    </div>
+    <div class="row">
+        <div class="container">
+            @if (count($produtos) > 0)   
+            {!! $produtos->render() !!}
+            @endif
+        </div>
     </div>
 </div>
 @include('layouts.rodape')

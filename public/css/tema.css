@@ -7,6 +7,18 @@
     margin-bottom: -15px;
 }
 
+#produto{
+    border: 0px;
+}
+
+#preco{
+    color: #f40b24;
+}
+
+#produto:hover{
+    background: #f2f2f2;
+}
+
 #texto-titulo{
     color: #712095;
 }
