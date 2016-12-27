@@ -37,9 +37,12 @@
             
             <hr>
             <br>
-            <h5 id="txt-branco">© 2017 | Loja Miss Daisy</h5>
-            <h6>Verão BETA - Teste Inicial</h6>
-            <h6>Desenvolvida por Moisés Rocha de Oliveira</h6>
+            <h6>Miss Daisy Cosméticos | Progressivas | Máscaras 
+                | Linha de tratamento completa para manter a cor dos cabelos 
+                | Compre produtos de Tratamento para Cabelos Rebeldes na Miss Daisy
+                |Aqui é o melhor lugar para comprar produtos Miss Daisy.</h6>
+            <h5 id="txt-branco">© 2017 | Loja Miss Daisy Professional</h5>
+            <h6>Versão BETA - Teste Inicial</h6>            
         </div>
     </div> 
 </footer>

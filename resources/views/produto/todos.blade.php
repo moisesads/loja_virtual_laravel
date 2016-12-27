@@ -50,6 +50,23 @@
             @endif
         </div>
     </div>
+    <div class="row">
+        <br>
+        <p align="justify">O tratamento para cabelos rebeldes é feito com fórmulas 
+            desenvolvidas através de muita pesquisa na área, 
+            além de tecnologia avançada que faz com que todo o ano o 
+            mercado lance produtos inovadores para o cuidado e manutenção 
+            de cabelos rebeldes e indisciplinados.<br><br>
+
+            Os consumidores que precisam de cosméticos eficazes 
+            podem encontrar no tratamento para fios rebeldes a solução
+            para o cabelo volumoso e com aspecto arrepiado. A indústria 
+            de cosméticos investe em novas composições e disponibiliza
+            produtos que deixam a fibra capilar nutrida e restaurada, 
+            além de proporcionar aos fios saúde, maciez e brilho desejados.<br><br>
+        </p>
+    </div>
+
 </div>
 @include('layouts.rodape')
 @endsection

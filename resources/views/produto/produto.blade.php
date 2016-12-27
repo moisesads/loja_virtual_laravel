@@ -7,6 +7,17 @@
 
 <div class="container-fluid">
     <div class="row">
+        @if ($message = Session::get('success'))
+        <div class="col-md-12">
+            <div class="alert alert-success" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <strong>Adicionado!</strong> {{ $message }}
+            </div>
+        </div>                   
+        @endif
+    </div>
+    <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <h2 id="texto-titulo">{{ $produto->nome }}</h2>
             <div class="row">
@@ -17,7 +28,10 @@
                         <h2><b id="preco">R$ {{ $produto->preco }}</b></h2>
                         <p><b>6x de {{ $parcela }} sem juros</b></p>
 
-                        <a href="/carrinho" class="btn btn-default btn-lg btn-block" id="botao">Comprar</a>
+                    <a href="/add-para-carro/{{ $produto->id }}" 
+                       class="btn btn-default btn-lg btn-block" id="botao">
+                        Adicionar <span class="glyphicon glyphicon-shopping-cart">
+                    </a>
                     </center>
                 </div>
                 <div class="col-sm-9 col-md-6 col-lg-8">

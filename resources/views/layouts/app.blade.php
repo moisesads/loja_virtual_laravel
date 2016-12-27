@@ -29,8 +29,14 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a  id="txt-branco" href="/carrinho">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                Meu Carrinho</a>
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
+                                </span>
+                                @if ($carrinho =  Session::get('carrinho'))
+                                {{ $carrinho->totalQtd }}
+                                @else
+                                0
+                                @endif
+                            </a>
                         </li>   
                         @if (Auth::guest())
                         <li><a href="{{ url('/login') }}" id="txt-branco">Login</a></li>

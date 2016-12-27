@@ -23,10 +23,11 @@ Route::get('/resultados', function () {
     return view('pagina.resultados');
 });
 
-Route::get('/carrinho', function () {
+Route::get('/add-para-carro/{id}', 'ProdutoController@AddParaCarro');
 
-    return view('carrinho.carrinho');
-});
+Route::resource('carrinho', 'CarrinhoController');
+
+Route::resource('limpar_carrinho', 'CarrinhoController@limpar');
 
 //contato
 Route::get('/contato', function () {
