@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Produto;
-use App\Models\Carrinho;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Session;
 
 class ProdutoController extends Controller {
 
@@ -77,19 +75,7 @@ class ProdutoController extends Controller {
 
     public function destroy($id) {
         return '';
-    }
-    
-    public function AddParaCarro(Request $request, $id){
+    }   
         
-        $produto = Produto::find($id);
-        $meuCarrinho = Session::has('carrinho') ? Session::get('carrinho') : null;
-        $carrinho = new Carrinho($meuCarrinho);        
-        $carrinho->add($produto, $produto->id);
-        
-        $request->session()->put('carrinho', $carrinho);
-        //dd($request->session()->get('carrinho'));
-        return redirect('produto/'. $produto->id)->with('success', 'O Produto foi adicionado ao carrinho.');
-        
-    }
 
 }

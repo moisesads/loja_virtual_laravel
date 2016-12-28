@@ -1,16 +1,5 @@
 <?php
 
-/*
-  |--------------------------------------------------------------------------
-  | Web Routes
-  |--------------------------------------------------------------------------
-  |
-  | This file is where you may define all of the routes that are handled
-  | by your application. Just tell Laravel the URIs it should respond
-  | to using a Closure or controller method. Build something great!
-  |
- */
-
 //entrada do site
 Route::resource('/', 'IndexController');
 
@@ -23,7 +12,15 @@ Route::get('/resultados', function () {
     return view('pagina.resultados');
 });
 
-Route::get('/add-para-carro/{id}', 'ProdutoController@AddParaCarro');
+//carrinho
+
+Route::get('/add-para-carro/{id}', 'CarrinhoController@AddParaCarro');
+
+Route::get('remover_do_carrinho/{id}', 'CarrinhoController@RemoverItemCarrinho');
+
+Route::get('add_mais_um/{id}', 'CarrinhoController@AddMaisUm');
+
+Route::get('remover_menos_um/{id}', 'CarrinhoController@RemoverMenosUm');
 
 Route::resource('carrinho', 'CarrinhoController');
 
