@@ -33,7 +33,7 @@ class CarrinhoController extends Controller
         
         $request->session()->put('carrinho', $carrinho);
         //dd($request->session()->get('carrinho'));
-        return redirect('produto/'. $produto->id)->with('success', 'O Produto foi adicionado ao carrinho.');
+        return redirect('produto/'. $produto->id)->with('success', 'Este Produto foi adicionado ao carrinho.');
         
     }
     

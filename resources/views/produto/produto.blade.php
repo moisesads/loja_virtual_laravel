@@ -7,20 +7,21 @@
 
 <div class="container-fluid">
     <div class="row">
-        @if ($message = Session::get('success'))
-        <div class="col-md-12">
-            <div class="alert alert-success" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span></button>
-                <strong>Adicionado!</strong> {{ $message }}
-            </div>
-        </div>                   
-        @endif
-    </div>
-    <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <h2 id="texto-titulo">{{ $produto->nome }}</h2>
             <div class="row">
+                @if ($message = Session::get('success'))
+                <div class="col-md-12">
+                    <div class="alert alert-success" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                        <strong>Adicionado!</strong> {{ $message }}
+                        <a class="btn btn-danger" href="{{ url('/carrinho') }}">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Ver Carrinho
+                        </a> 
+                    </div>
+                </div>                   
+                @endif
                 <div class="col-sm-3 col-md-6 col-lg-4" >
                     <br> 
                     <center>  
@@ -28,10 +29,10 @@
                         <h2><b id="preco">R$ {{ $produto->preco }}</b></h2>
                         <p><b>6x de {{ $parcela }} sem juros</b></p>
 
-                    <a href="/add-para-carro/{{ $produto->id }}" 
-                       class="btn btn-default btn-lg btn-block" id="botao">
-                        Adicionar <span class="glyphicon glyphicon-shopping-cart">
-                    </a>
+                        <a href="/add-para-carro/{{ $produto->id }}" 
+                           class="btn btn-default btn-lg btn-block" id="botao">
+                            Adicionar <span class="glyphicon glyphicon-shopping-cart">
+                        </a>
                     </center>
                 </div>
                 <div class="col-sm-9 col-md-6 col-lg-8">
@@ -64,24 +65,24 @@
             </div><hr>
             <h4 id="texto-titulo">quem viu este produto, viu também</h4><br>
             <div class="row">
-               
-                    @foreach ( $produtos_rl as $produto_rl )
-                    <!-- verifica se é o produto citado acima-->
-                    @if ( $produto_rl->id != $produto->id ) 
-                    <center>
-                        <a href="/produto/{{$produto_rl->id }}?page=3">
-                            <div class="col-sm-6 col-md-3">
-                                <img id="produto-foto" src="{{ $produto_rl->foto }}" class="img-rounded" width="100" height="100" alt="{{ $produto_rl->nome }}">
-                                <p>R$ {{ $produto_rl->preco }}<br>
-                                    {{ $produto_rl->nome }}<br><br>
-                                </p>
-                            </div>
-                        </a>
-                    </center>
-                    @endif
-                    @endforeach
+
+                @foreach ( $produtos_rl as $produto_rl )
+                <!-- verifica se é o produto citado acima-->
+                @if ( $produto_rl->id != $produto->id ) 
+                <center>
+                    <a href="/produto/{{$produto_rl->id }}?page=3">
+                        <div class="col-sm-6 col-md-3">
+                            <img id="produto-foto" src="{{ $produto_rl->foto }}" class="img-rounded" width="100" height="100" alt="{{ $produto_rl->nome }}">
+                            <p>R$ {{ $produto_rl->preco }}<br>
+                                {{ $produto_rl->nome }}<br><br>
+                            </p>
+                        </div>
+                    </a>
+                </center>
+                @endif
+                @endforeach
             </div>
-           
+
         </div>
     </div>
 </div>
