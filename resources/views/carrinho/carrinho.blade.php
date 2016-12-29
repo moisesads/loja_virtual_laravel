@@ -48,7 +48,7 @@
                         <td>
                             <div class="col-md-2">
                                 <a href="produto/{{ $p }}">
-                                <img src="{{ $item['item']['foto'] }}" style="width: 50px; height:50px;">
+                                    <img src="{{ $item['item']['foto'] }}" style="width: 50px; height:50px;">
                                 </a>
                             </div>
 
@@ -83,14 +83,17 @@
                     </tr>
                     @endforeach
                     <th colspan="4">
-                    <h3 >
+
                         @if ($parcela = $carrinho->totalPreco /6 )
-                        <div id="texto-titulo"> 6 x de {{ number_format($parcela, 2) }} sem juros + frete grátis</div>
+                        6 x de <b id="texto-titulo">R${{ number_format($parcela, 2) }}
+                        </b> sem juros + 
+                        <b id="texto-verde">frete grátis</b>
                         @endif
+                    <h4>
                         <b id="texto-titulo" class="pull-right">
                             Total R$ {{ number_format($carrinho->totalPreco, 2) }}
                         </b>
-                    </h3>
+                    </h4>
                     </th>
                 </table>
             </div>
