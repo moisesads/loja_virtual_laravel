@@ -1,3 +1,9 @@
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
+
 #menu-superior{
     background: #712095;
 }

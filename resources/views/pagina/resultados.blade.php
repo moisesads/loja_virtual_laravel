@@ -12,27 +12,112 @@
             </center> 
         </div>
         <div class="col-lg-6">
-            <h3 id="texto-titulo">Resultados</h3>            
+            <h3 id="texto-titulo">Resultados enviados pelos clientes</h3>            
         </div>
         <hr>
     </div>
-    <div class="row"><br><br>
-       <div class="container">
-            <div class="alert alert-info" role="alert">
-                <h4><strong>Página em construção.</strong><br>
-                Aproveite e <a id="texto-titulo" href="/register">cadastre-se</a>, é rapidinho!
-                </h4>
-            </div>
-            <center>
-                <a href="{{ url('/produtos') }}">Voltar para Produtos</a><br><br>
-                <a class="btn btn-success" href="{{ url('/register') }}">
-                    Criar Uma Nova Conta
-                </a> 
-            </center>   <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </div> 
+    <div class="row">
+        <!-- References: https://github.com/fancyapps/fancyBox -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+        <div class="container">
+            <div class="row">
+                <div class='list-group gallery'>
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos0.jpg">
+                            <img class="img-responsive" alt="" src="/img/result/fotos0.jpg" />
+                            <div class='text-right'>
+                                <small class='text-muted'>Envida pela cliente</small>
+                            </div> 
+                        </a>
+                    </div> 
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos9.jpg">
+                            <img class="img-responsive" alt="" src="/img/result/fotos9.jpg" />
+                            <div class='text-right'>
+                                <small class='text-muted'>Envida pela cliente</small>
+                            </div> 
+                        </a>
+                    </div> 
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos10.jpg">
+                            <img class="img-responsive" alt="" src="/img/result/fotos10.jpg" />
+                            <div class='text-right'>
+                                <small class='text-muted'>Envida pela cliente</small>
+                            </div> 
+                        </a>
+                    </div> 
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos11.jpg">
+                            <img class="img-responsive" alt="" src="/img/result/fotos11.jpg" />
+                            <div class='text-right'>
+                                <small class='text-muted'>Envida pela cliente</small>
+                            </div> 
+                        </a>
+                    </div>
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos4.jpg">
+                            <img class="img-responsive" alt="" src="/img/result/fotos4.jpg" />
+                            <div class='text-right'>
+                                <small class='text-muted'>Envida pela cliente</small>
+                            </div>
+                        </a>
+                    </div> 
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos5.jpg">
+                            <img class="img-responsive" alt="" src="/img/result/fotos5.jpg" />
+                            <div class='text-right'>
+                                <small class='text-muted'>Envida pela cliente</small>
+                            </div> 
+                        </a>
+                    </div>               
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos1.jpg">
+                            <img class="img-responsive" alt="" src="/img/result/fotos1.jpg" />
+                            <div class='text-right'>
+                                <small class='text-muted'>Envida pela cliente</small>
+                            </div>
+                        </a>
+                    </div>
+                     <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos2.jpg">
+                            <img class="img-responsive" alt="" src="/img/result/fotos2.jpg" />
+                            <div class='text-right'>
+                                <small class='text-muted'>Envida pela cliente</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos3.jpg">
+                            <img class="img-responsive" alt="" src="/img/result/fotos3.jpg" />
+                            <div class='text-right'>
+                                <small class='text-muted'>Envida pela cliente</small>
+                            </div>
+                        </a>
+                    </div> 
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos.jpg">
+                            <img class="img-responsive" alt="" src="/img/result/fotos.jpg" />
+                            <div class='text-right'>
+                                <small class='text-muted'>Envida pela cliente</small>
+                            </div> <!-- text-right / end -->
+                        </a>
+                    </div>                     
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos6.jpg">
+                            <img class="img-responsive" alt="" src="/img/result/fotos6.jpg" />
+                            <div class='text-right'>
+                                <small class='text-muted'>Envida pela cliente</small>
+                            </div> <!-- text-right / end -->
+                        </a>
+                    </div>
+                </div> 
+            </div> 
+
+        </div>
     </div>
-</div>
 
-
-@include('layouts.rodape')
-@endsection
+ </div>
+    @include('layouts.rodape')
+    @endsection
