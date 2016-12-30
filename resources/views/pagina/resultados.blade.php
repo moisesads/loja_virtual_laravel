@@ -28,7 +28,7 @@
                         <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos0.jpg">
                             <img class="img-responsive" alt="" src="/img/result/fotos0.jpg" />
                             <div class='text-right'>
-                                <small class='text-muted'>Envida pela cliente</small>
+                                <small class='text-muted'>Enviada pela cliente</small>
                             </div> 
                         </a>
                     </div> 
@@ -36,7 +36,7 @@
                         <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos9.jpg">
                             <img class="img-responsive" alt="" src="/img/result/fotos9.jpg" />
                             <div class='text-right'>
-                                <small class='text-muted'>Envida pela cliente</small>
+                                <small class='text-muted'>Enviada pela cliente</small>
                             </div> 
                         </a>
                     </div> 
@@ -44,7 +44,7 @@
                         <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos10.jpg">
                             <img class="img-responsive" alt="" src="/img/result/fotos10.jpg" />
                             <div class='text-right'>
-                                <small class='text-muted'>Envida pela cliente</small>
+                                <small class='text-muted'>Enviada pela cliente</small>
                             </div> 
                         </a>
                     </div> 
@@ -52,7 +52,7 @@
                         <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos11.jpg">
                             <img class="img-responsive" alt="" src="/img/result/fotos11.jpg" />
                             <div class='text-right'>
-                                <small class='text-muted'>Envida pela cliente</small>
+                                <small class='text-muted'>Enviada pela cliente</small>
                             </div> 
                         </a>
                     </div>
@@ -60,7 +60,7 @@
                         <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos4.jpg">
                             <img class="img-responsive" alt="" src="/img/result/fotos4.jpg" />
                             <div class='text-right'>
-                                <small class='text-muted'>Envida pela cliente</small>
+                                <small class='text-muted'>Enviada pela cliente</small>
                             </div>
                         </a>
                     </div> 
@@ -68,7 +68,7 @@
                         <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos5.jpg">
                             <img class="img-responsive" alt="" src="/img/result/fotos5.jpg" />
                             <div class='text-right'>
-                                <small class='text-muted'>Envida pela cliente</small>
+                                <small class='text-muted'>Enviada pela cliente</small>
                             </div> 
                         </a>
                     </div>               
@@ -76,7 +76,7 @@
                         <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos1.jpg">
                             <img class="img-responsive" alt="" src="/img/result/fotos1.jpg" />
                             <div class='text-right'>
-                                <small class='text-muted'>Envida pela cliente</small>
+                                <small class='text-muted'>Enviada pela cliente</small>
                             </div>
                         </a>
                     </div>
@@ -84,7 +84,7 @@
                         <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos2.jpg">
                             <img class="img-responsive" alt="" src="/img/result/fotos2.jpg" />
                             <div class='text-right'>
-                                <small class='text-muted'>Envida pela cliente</small>
+                                <small class='text-muted'>Enviada pela cliente</small>
                             </div>
                         </a>
                     </div>
@@ -92,7 +92,7 @@
                         <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos3.jpg">
                             <img class="img-responsive" alt="" src="/img/result/fotos3.jpg" />
                             <div class='text-right'>
-                                <small class='text-muted'>Envida pela cliente</small>
+                                <small class='text-muted'>Enviada pela cliente</small>
                             </div>
                         </a>
                     </div> 
@@ -100,7 +100,7 @@
                         <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos.jpg">
                             <img class="img-responsive" alt="" src="/img/result/fotos.jpg" />
                             <div class='text-right'>
-                                <small class='text-muted'>Envida pela cliente</small>
+                                <small class='text-muted'>Enviada pela cliente</small>
                             </div> <!-- text-right / end -->
                         </a>
                     </div>                     
@@ -108,7 +108,7 @@
                         <a class="thumbnail fancybox" rel="ligthbox" href="/img/result/fotos6.jpg">
                             <img class="img-responsive" alt="" src="/img/result/fotos6.jpg" />
                             <div class='text-right'>
-                                <small class='text-muted'>Envida pela cliente</small>
+                                <small class='text-muted'>Enviada pela cliente</small>
                             </div> <!-- text-right / end -->
                         </a>
                     </div>
