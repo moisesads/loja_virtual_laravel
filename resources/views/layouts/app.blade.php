@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>       
+    <head>
         <title>@yield('title')</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="{{ asset('/css/tema.css') }}">
-        <script src="{{ asset('/js/meu.js')}}" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{ elixir("css/vendor.css") }}">
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top" id="menu-superior">
@@ -17,7 +13,7 @@
                     <button  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
+                        <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand"  href="{{ url('/') }}"><b id="txt-branco">Loja Miss Daisy</b></a>
                 </div>
@@ -38,11 +34,11 @@
                                 0
                                 @endif
                             </a>
-                        </li>   
+                        </li>
                         @if (Auth::guest())
                         <li><a href="{{ url('/login') }}" id="txt-branco">Login</a></li>
                         <li><a href="{{ url('/register') }}" id="txt-branco">Cadastro</a></li>
-                        @else                        
+                        @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"  id="txt-branco" role="button" aria-expanded="false">
                                 <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
@@ -75,6 +71,9 @@
         <br><br>
 
         @yield('content')
+
+        <script src="{{ elixir('js/vendor.js') }}"></script>
+        <script src="{{ elixir('js/app.js') }}"></script>
 
     </body>
 </html>
