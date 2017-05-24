@@ -9,8 +9,8 @@
     <div class="row"><br><br>
         <div class="col-md-9 col-md-offset-2">
             <img src="/img/logoM.png"/>
-        </div>            
-    </div>  
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-9 col-md-offset-2">
 
@@ -30,7 +30,7 @@
                     </div>
                     <center>
                         <img src="/img/contato-sucesso.png"/><br><br><br><br>
-                    </center>                    
+                    </center>
                     @else
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/mensagem_contato') }}">
                         {{ csrf_field() }}
@@ -77,5 +77,3 @@
 
 @include('layouts.rodape')
 @endsection
-
-

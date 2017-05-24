@@ -9,12 +9,13 @@ use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller {
 
-    //        
+    //
     public function index() {
         //entrada do site
         $produtos = DB::table('produtos')->paginate(5);
-        
-        return view('welcome', compact('produtos'));         
+        //dd($produtos);
+
+        return view('welcome', compact('produtos'));
     }
 
 }

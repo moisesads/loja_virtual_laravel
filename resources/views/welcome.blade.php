@@ -16,14 +16,14 @@
         <div class="item active">
             <img src="/img/banner/banner1.jpg" alt="Miss Daisy">
             <div class="carousel-caption">
-            </div>      
+            </div>
         </div>
 
         <div class="item">
             <img src="/img/banner/banner2.jpg" alt="Miss Daisy">
             <div class="carousel-caption">
                 <h2>Sua loja de fábrica.</h2>
-            </div>      
+            </div>
         </div>
     </div>
 
@@ -38,7 +38,7 @@
     </a>
 </div>
 
-<div class="container text-center">  
+<div class="container text-center">
     <div class="row">
         <div class="col-lg-6">
             <img id="logoM" src="/img/logoM.png" alt="Logo Miss Daisy"/>
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </a>
-        @endforeach   
+        @endforeach
         @else
         <br><br><br><br><center>Não extistem produtos cadastrados.</center><br><br><br><br>
         @endif
@@ -83,19 +83,20 @@
                 <center>
                     <a class="btn btn-success" href="{{ url('/register') }}">
                         Criar Uma Nova Conta
-                    </a> 
-                </center>  
+                    </a>
+                </center>
             </div>
             <div class="well">
                 <center>
                     <a class="btn btn-warning" href="{{ url('/register') }}">
                         Confira os resultados
-                    </a> 
+                    </a>
                 </center>
             </div>
 
         </div>
     </div>
+
 </div><br>
 @include('layouts.rodape')
 @endsection

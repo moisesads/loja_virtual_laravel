@@ -9,8 +9,8 @@
         <div class="row">
             <div class="col-md-9 col-md-offset-2">
                 <img src="/img/logoM.png"/>
-            </div>            
-        </div>  
+            </div>
+        </div>
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading" id="texto-titulo">Login Minha Miss Daisy
@@ -64,8 +64,8 @@
             <center>
                 <a class="btn btn-success" href="{{ url('/register') }}">
                     Criar Uma Nova Conta
-                </a> 
-            </center>            
+                </a>
+            </center>
 
         </div>
     </div>

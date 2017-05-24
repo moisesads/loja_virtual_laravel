@@ -48,7 +48,7 @@ class Carrinho {
     public function RemoverUm($id) {
 
         if ($this->itens[$id]['qtd'] > 1) {
-            
+
             $this->totalPreco -= $this->itens[$id]['item']['preco'];
             $this->totalQtd--;
             $this->itens[$id]['preco'] -= $this->itens[$id]['item']['preco'];

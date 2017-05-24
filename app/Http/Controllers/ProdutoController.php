@@ -16,8 +16,8 @@ class ProdutoController extends Controller {
         return view('produto.admin.todos', compact('produtos'));
     }
 
-    public function todos() {        
-        $produtos = DB::table('produtos')->paginate(8);       
+    public function todos() {
+        $produtos = DB::table('produtos')->paginate(8);
         //acesso publico
         return view('produto.todos', compact('produtos'));
     }
@@ -35,19 +35,19 @@ class ProdutoController extends Controller {
             'foto' => 'required',
             'preco_custo' => 'numeric',
         ]);
-        
+
         $produto = new Produto();
-        
+
         $produto->nome         = $request->nome;
         $produto->preco_custo  = $request->preco_custo;
         $produto->preco        = $request->preco;
-        $produto->status       = $request->status;       
-        $produto->descricao    = $request->descricao;       
+        $produto->status       = $request->status;
+        $produto->descricao    = $request->descricao;
         $produto->modo_usar    = $request->modo_usar;
-        $produto->composicao   = $request->composicao;      
-        $produto->categoria_id = null;       
-        $produto->foto = '/img/produtos/' . $request->foto;       
-        
+        $produto->composicao   = $request->composicao;
+        $produto->categoria_id = null;
+        $produto->foto = '/img/produtos/' . $request->foto;
+
         $produto->save();
 
         return redirect('/admin/produtos')->with('success', 'Produto adicionado com sucesso.');
@@ -56,12 +56,12 @@ class ProdutoController extends Controller {
     public function show($id) {
         //busca produto pelo id
         $produto = Produto::findOrFail($id);
-        //valor das parcelas 
+        //valor das parcelas
         $parcela = $produto->preco / 6;
         $parcela = number_format($parcela, 2);
         //busca produtos relacionados
         $produtos_rl = DB::table('produtos')->paginate(4);
-               
+
         return view('produto.produto', compact('produto', 'parcela', 'produtos_rl'));
     }
 
@@ -75,7 +75,7 @@ class ProdutoController extends Controller {
 
     public function destroy($id) {
         return '';
-    }   
-        
+    }
+
 
 }
