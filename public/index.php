@@ -1,10 +1,11 @@
 <?php
 
 /**
- * Laravel - A PHP Framework For Web Artisans
+ * Loja Virtual feita com Laravel
  *
- * @package  Laravel
- * @author   Taylor Otwell <taylor@laravel.com>
+ * @package  Loja Vitual Laravel Vuejs
+ * @author   Moisés Rocha de Oliveira, com acrécimos de créditos à
+ *           Taylor Otwell e toda equipe do Laravel e VueJs
  */
 
 /*
